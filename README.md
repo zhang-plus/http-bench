@@ -40,7 +40,7 @@
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/zhang-plus/http-bench.git
+git clone https://github.com/zhangplus1/http-bench.git
 cd http-bench
 ```
 
@@ -170,7 +170,7 @@ http-benchmark/
 
 ### 从源码构建
 ```bash
-git clone https://github.com/zhang-plus/http-bench_v1.git
+git clone https://github.com/zhangplus1/http-bench_v1.git
 cd http-benchmark
 go build -o http-bench_v1 http-bench_v1.go
 ```
