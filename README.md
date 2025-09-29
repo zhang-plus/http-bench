@@ -1,6 +1,6 @@
-# HTTP 性能基准测试工具
+# HTTP 接口性能基准测试工具
 
-一个使用 Go 语言编写的高性能 HTTP 基准测试工具，支持并发压力测试、详细的性能指标统计和结果导出功能。
+一个使用 Go 语言编写的高性能 HTTP 基准测试工具，基于go高性能并发http框架**fasthttp** **fiber** ,支持并发压力测试、详细的性能指标统计和结果导出功能。
 
 ## 功能特性
 
@@ -33,31 +33,31 @@
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/your-username/http-benchmark.git
-cd http-benchmark
+git clone https://github.com/zhang-plus/http-bench.git
+cd http-bench
 ```
 
 2. **安装依赖**
 ```bash
-go mod init http-benchmark
+go mod init http-bench
 go mod tidy
 ```
 
 3. **编译工具**
 ```bash
-go build -o http-bench http-bench_v1.go
+go build -o http-bench_v1 http-bench_v1.go
 ```
 
 ### 使用方法
 
 **运行工具：**
 ```bash
-./http-bench
+./http-bench_v1
 ```
 
 在 Windows 上：
 ```cmd
-http-bench.exe
+http-bench_v1.exe
 ```
 
 ## 交互式配置
@@ -121,11 +121,9 @@ CPU 核心数: 8
 ```
 http-benchmark/
 ├── http-bench_v1.go    # 主程序文件
-├── go.mod              # Go 模块文件
-├── go.sum              # 依赖校验文件
+├── go.mod              # Go 模块文件   go mod init http-bench
+├── go.sum              # 依赖校验文件  go  mod tidy
 ├── README.md           # 项目说明文档
-└── examples/           # 示例配置目录
-    └── test-scenarios.md
 ```
 
 ## 技术架构
@@ -165,14 +163,14 @@ http-benchmark/
 
 ### 从源码构建
 ```bash
-git clone https://github.com/your-username/http-benchmark.git
+git clone https://github.com/zhang-plus/http-bench_v1.git
 cd http-benchmark
-go build -o http-bench http-bench_v1.go
+go build -o http-bench_v1 http-bench_v1.go
 ```
 
 ### 运行测试
 ```bash
-go test -v
+go run http-bench_v1.go
 ```
 
 ### 代码结构
@@ -207,13 +205,12 @@ go test -v
 
 ## 许可证
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+本项目采用 Apache 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
 ## 技术支持
 
 如有问题或建议，请通过以下方式联系：
-- 提交 [GitHub Issue](https://github.com/your-username/http-benchmark/issues)
-- 发送邮件至：your-email@example.com
+- 提交 [GitHub Issue](https://github.com/zhang-plus/http-bench/issues)
 
 ## 致谢
 
