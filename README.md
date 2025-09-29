@@ -2,10 +2,11 @@
 
 一个使用 Go 语言编写的高性能 HTTP 基准测试工具，基于go高性能并发http框架  fasthttp  fiber ,支持并发压力测试、详细的性能指标统计和结果导出功能。已编译win系统、Linux系统可执行文件便于直接使用，文件在发行版。
 
-##使用截图
+## 使用截图
 
 <img width="1446" height="1288" alt="ScreenShot_Using" src="https://github.com/user-attachments/assets/39b4c08a-78e8-42c6-a679-6f6487b7509f" />
 <img width="1058" height="1116" alt="ScreenShot_Using2" src="https://github.com/user-attachments/assets/fdd53d82-566b-44cf-950d-d864d7135f6e" />
+<img width="2120" height="1096" alt="ScreenShot_Using3" src="https://github.com/user-attachments/assets/5c6d507b-920b-4636-8657-de537177a464" />
 
 
 ## 功能特性
